@@ -27,6 +27,9 @@ namespace GourmetPizza.Account
                 //Insert customer data starting here ...
                 if (Page.IsValid)
                 {
+                    // Add the registered user to the role of "consumers"
+                    IdentityResult resultAdd = manager.AddToRole(manager.FindByEmail(Email.Text).Id, "customers");
+
                     // read the entire connection string from Web.config
                     string connectionString = WebConfigurationManager.ConnectionStrings["PizzaOrdersConnection"].ConnectionString;
                     // create the connection based on the connection string

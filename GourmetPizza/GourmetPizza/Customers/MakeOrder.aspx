@@ -6,7 +6,6 @@
         <%--Order Details View--%>
         <asp:View ID="OrderDetails" runat="server">
             <div class="form-horizontal">
-                <br />
                 <h4>Order Details</h4>
                 <hr />
                 <div class="form-group">

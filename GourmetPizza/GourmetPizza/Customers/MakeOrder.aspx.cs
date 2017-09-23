@@ -82,12 +82,14 @@ namespace GourmetPizza.customers
                     if (rowCount > 0)
                     {
                         msg = "\nOrder is submitted";
+                        lblResult.Focus();
                         lblResult.Text = msg;
                         lblResult.ForeColor = Color.Green;
                     }
                     else
                     {
                         msg = "Order has some issues. Some data cannot be sent";
+                        lblResult.Focus();
                         lblResult.Text = msg;
                         lblResult.ForeColor = Color.Red;
                     }
